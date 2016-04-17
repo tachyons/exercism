@@ -4,10 +4,10 @@ class Squares
 		@number=num
 	end
 	def square_of_sum
-		(1..@number).inject(:+)**2
+		(0..@number).inject(:+)**2
 	end
 	def sum_of_squares
-		(1..@number).map do | number| number**2 end.inject(:+)
+		(0..@number).map do | number| number**2 end.inject(:+)
 	end
 	def difference
 		square_of_sum-sum_of_squares
